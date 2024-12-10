@@ -117,7 +117,7 @@ userRouter.post('/signin', async (c) => {
             })
         }
 
-        c.status(200);
+        c.status(401);
 
         return c.json({
           message:"Incorrect Password"
